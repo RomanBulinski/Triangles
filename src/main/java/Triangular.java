@@ -24,9 +24,7 @@ public class Triangular {
             }
             return 0;
         }
-
         int index = binarySearch(A, 0);
-
         if (index > 0) {
             int[] B = copyOfRange(A, index, A.length - 1);
             if (B.length < 3) {
@@ -39,7 +37,6 @@ public class Triangular {
             }
             return 0;
         }
-
         for (int i = 2; i < A.length; i++) {
             if (A[i - 2] > 0 && A[i - 2] + A[i - 1] > A[i]) {
                 return 1;
@@ -47,5 +44,4 @@ public class Triangular {
         }
         return 0;
     }
-
 }
